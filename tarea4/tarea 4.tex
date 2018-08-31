@@ -1,0 +1,154 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Josué Morales 20181101}
+\title{tarea 1 Informática 1}
+\date{30 de Agosto del 2018}
+\begin{document}
+ \title{\bf Hoja de trabajo 4}
+ \maketitle
+{\bf Ejercicio 1:}
+Indicar que definiciones pertenecen al mismo conjunto:
+
+\begin{enumerate}
+	\item{$a:=\{1,2,4,8,16,32,64\}$}
+	\item{$b:=\{n\ \in \mathbb{N}\ |\ \exists x \in \mathbb{N}\ .\ x=n/5 \}$}
+	\item{$c:=\{n\in \mathbb{N}\ |\ \exists x\in\mathbb{N}\ .\ n=x*x \}$}
+	\item{$d:=\{n\in\mathbb{N}\ |\ \exists i\in\mathbb{N}\ .\ n=2^i\wedge n<100 \}$}
+	\item{$e:=\{ n\in\mathbb{N}\ |\ \exists x\in \mathbb{N}\ .\ x=\sqrt{n} \}$}
+	\item{$f:=\{ n\in\mathbb{N}\ |\ \exists x\in \mathbb{N}\ .\ n=x+x+x+x+x \}$}
+\end{enumerate}
+
+{\bf Respuestas:}
+\begin{itemize}
+	\item D corresponde a A
+	\item E corresponde a C
+	\item B corresponde a F 
+\end{itemize}
+  
+ \
+ 
+{\bf Ejercicio 2:} definir los siguientes conjuntos con jerga matemática
+\
+\begin{enumerate}
+	\item{El conjunto de todos los naturales divisibles dentro de $5$}
+	\item{El conjunto de todos los naturales divisibles dentro de $4$ y $5$}
+	\item{El conjunto de todos los naturales que son primos}
+	\item{El conjunto de todos los conjuntos de numeros naturales que contienen
+		un numero divisible dentro de $15$}
+	\item{El conjunto de todos los conjuntos de numeros naturales que al ser sumados
+		producen $42$ como resultado}
+\end{enumerate}
+\
+{\bf Respuestas:}
+\begin{enumerate} 
+	
+	\item{$A:=\{n\ \in \mathbb{N}\ |\ \exists x \in \mathbb{N}\ .\ x=n/5 \}$}
+	
+	\item{$A \cap B:=\{x/x\ \in A\ \wedge  \in B \}$} 
+	
+	{$A:=\{n\ \in \mathbb{N}\ |\ \exists x \in \mathbb{N}\ .\ x=n/5 \}$}
+	
+	{$B:=\{n\ \in \mathbb{N}\ |\ \exists x \in \mathbb{N}\ .\ x=n/4 \}$}
+	
+	\item {$C:= \{ \forall \ n \in \mathbb{N}\ | \ \nexists  x \in \mathbb{N}\ \ 1 < x < n \ . \ n \ mod(x) = 0 \} $}
+	
+	\item 	{$D:=\{n\ \in \mathbb{N}\ |\ \exists x \in \mathbb{N}\ .\ n=x*15 \}$}
+	
+	\item 	{$E:=\{n\ \in \mathbb{N}\ | \sum_{i=1}^{|42|} n_i = 42 \}$}
+	
+ \end{enumerate}
+   \
+  
+  {\bf Ejercicio 3:} 
+  \\
+  Definir una relaci\'on llamada $S\subset \mathbb{N}_{50}\times\mathbb{N}_{50}\times\mathbb{N}_{50}$ en donde $\mathbb{N}_{30}:=\{ n \in \mathbb{N}\ |\ n\leq 30 \}$. La cual relaciona a todos los numeros
+  \emph{semi-primos} menores a $30$ con los numeros primos que lo forman. Las tripletas que pertencen
+  al conjunto que define dicha relaci\'on deben ser de la forma $\langle \mathtt{primo}_1,\mathtt{primo}_2,
+  \mathtt{semi-primo} \rangle$, por ejemplo, para el numero $6$ corresponderia la tripleta $\langle 2,3,6 \rangle$
+  
+  	
+  	\
+  	
+  	 {\bf Respuesta:}
+  	 
+  	 \begin{itemize}
+  	   	
+   	\item Definición por extensión 
+   	
+   	$$
+   	{N}_{30}:= \left\{
+   	\begin{bmatrix}
+   	\langle 2,2,4 \rangle , & \langle 2,3,6 \rangle, & \langle 3,3,9 \rangle, \\
+   	\langle 2,5,10 \rangle, & \langle 2,7,14 \rangle, & \langle 3,5,15 \rangle, \\
+   	\langle 3,7,21 \rangle, & \langle 2,11,22 \rangle, & \langle 5,5,25 \rangle, \\
+   	\langle 2,3,26 \rangle
+   	\end{bmatrix}
+   	\right\}
+   	$$ \\
+   	
+  
+  	 \end{itemize} 
+   
+    {\bf Ejercicio 4:} 
+  \
+  Definir los conjuntos de las siguientes funciones:
+  
+  \begin{enumerate}
+  	\item{$f:\mathbb{N}\rightarrow\mathbb{N}$; $f(x)=x+x$}
+  	\item{$g:\mathbb{N}\rightarrow\mathbb{B}$; $g(x)$ es verdadero si
+  		$x$ es divisible dentro de $5$, falso en caso contrario. Nota: $\mathbb{B}=
+  		\{\mathtt{true},\mathtt{false}\}$, puede definir dos conjuntos separados y
+  		definir la funci\'on como la union de ambos conjuntos.}
+  	\item{Indicar el conjunto al que pertenece la funci\'on $f\circ g$}
+  	\item{Definir el conjunto que corresponde a la funci\'on $f\circ g$}
+  \end{enumerate}
+  
+      {\bf Respuestas:}
+       
+  \begin{enumerate}
+  	
+  	\item  $ \ f \  = \{ x \in \ \mathtt{N} \ |\  (x , x+x) \} $ 
+  	
+  	\item {$a \cup b:=\{ \lambda (true,false)\ \in a\ \wedge  \in b \}$} 
+  	\\
+  	\\ {$a:=\{(n,true)\ | n \in \mathbb{N} \ \wedge\ \exists x \in \mathbb{N}\ .\ x=n/5 \}$}
+  	\\ {$b:=\{(n,false)\ | n \in \mathbb{N} \ \wedge\ \exists x \in \mathbb{N}\ .\ x= \neg (n/5) \}$}
+  	
+  	\item {$f\circ g \in \ C=( n \in \ \mathtt{N} \ | 2n ) $}
+  	
+  	\item 	{$D:=\{(n,f(g)) \ | n \in \mathbb{N} \wedge f(x)\in\mathbb{N} \wedge g(x) \subset f(x) \}$}
+  	
+  	
+  \end{enumerate}	
+
+{\bf Ejercicio 5:}
+\ 
+dadas las siguientes funciones que pertenecen a $\mathbb{R}\rightarrow \mathbb{R}$, indique si la funci\'on es injectiva, surjectiva o bijectiva.
+
+\begin{enumerate}
+	\item{$f(x)=x^2$}   {\bf Surjectiva} 
+	\item{$g(x)=\frac{1}{cos(x-1)}$}  {\bf Inyectiva} 
+	\item{$h(x)=2x$}  {\bf Biyectiva}
+	\item{$w(x)=x+1$}  {\bf Biyectiva}
+\end{enumerate}
+
+\textbf{Ejercicio 6}
+
+\begin{itemize}
+	\item {$B1:=\{(x,y) \ | (x,y) \in \mathbb{N} > 0 \ \wedge \exists n \in \mathbb{N}. x=2n \}$}
+	
+	\item {$B2:=\{(x,y) \ | (x,y) \in \mathbb{N} > 0 \ \wedge \exists n \in \mathbb{N}. x=(2n-1) \}$}
+	
+	\item {$C:=\{(x,y) \ | (x,y) \in \mathbb{Z}^-\ \wedge \exists n \in \mathbb{Z}^-. x= (2n-1) \}$}
+	
+	\item {$B \cup B1 \cup B2:=\{(x,y) \ | (x,y) \in \mathbb{N} \}$}
+	 
+
+\end{itemize}
+
+
+ \end{document}
